@@ -117,4 +117,32 @@ public class TriangleTestCase {
 		
 		assertEquals(expectedValue, actualValue);
 	}
+	
+	@Test
+	public void testCase9() {
+		float a = 4;
+		float b = 10;
+		float c = 3;
+		
+		int expectedValue = 1; //1 if triangle exists
+		
+		TriangleClass myObj = new TriangleClass();
+		int actualValue = myObj.classifyTriangle(a, b, c); //fetches the return value, 1 if triangle exists and 2 if it does not
+		
+		assertEquals(expectedValue, actualValue);
+	}
+	
+	@Test
+	public void testCase10() {
+		float a = 4;
+		float b = 3;
+		float c = 10;
+		
+		int expectedValue = 1; //1 if triangle exists
+		
+		TriangleClass myObj = new TriangleClass();
+		int actualValue = myObj.classifyTriangle(a, b, c); //fetches the return value, 1 if triangle exists and 2 if it does not
+		
+		assertEquals(expectedValue, actualValue);
+	}
 }
